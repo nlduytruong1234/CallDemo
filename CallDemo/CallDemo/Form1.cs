@@ -18,8 +18,11 @@ namespace CallDemo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int a = int.Parse(textBox1.Text);
-            int b = int.Parse(textBox2.Text);
+            if (textBox1.Text != "")
+            {
+                int a = int.Parse(textBox1.Text);
+                int b = int.Parse(textBox2.Text);
+            }
         }
     }
 }
